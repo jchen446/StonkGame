@@ -1,6 +1,6 @@
 class Introduction extends Engine.Scene {
     setup() {
-        this.engine.setTitle("Stonks 4.0");
+        this.engine.setTitle("StoCks 4.0");
         this.engine.addAction("begin");
         this.engine.show("Get ready to trade!");
     }
@@ -16,7 +16,7 @@ class Trading extends Engine.Scene {
         this.cash = 1000;
         this.price = 0;
 
-        this.engine.setTitle("Trade Stonks");
+        this.engine.setTitle("Trade StoCks");
 
         this.engine.addAction("buy");
         this.engine.addAction("sell");
@@ -29,7 +29,7 @@ class Trading extends Engine.Scene {
         }
 
         this.engine.show(JSON.stringify({
-            stonks: this.stonks + " STONK",
+            stonks: this.stonks + " STOcK",
             cash: "$" + this.cash.toFixed(2),
             price: "$" + this.price.toFixed(2)
         }, null, 1));
